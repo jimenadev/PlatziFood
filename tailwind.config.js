@@ -1063,6 +1063,9 @@ module.exports = {
       50: '50',
     },
   },
+  variants: {
+    opacity: ['responsive', 'hover', 'focus', 'disabled'],
+  },
   plugins: [],
 }
 
