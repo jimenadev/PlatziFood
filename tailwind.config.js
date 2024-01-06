@@ -8,6 +8,12 @@ module.exports = {
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+    extend:{
+      colors:{
+        'primary':'#f3c614',
+        'secondary':'#353535'
+      },
+    },
     accentColor: ({ theme }) => ({
       ...theme('colors'),
       auto: 'auto',
