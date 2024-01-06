@@ -492,6 +492,39 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
 .absolute {
   position: absolute;
 }
@@ -508,6 +541,10 @@ video {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .-mt-2 {
   margin-top: -0.5rem;
@@ -566,6 +603,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
 }
@@ -574,6 +615,14 @@ video {
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.object-left {
+  -o-object-position: left;
+     object-position: left;
 }
 .p-2 {
   padding: 0.5rem;
@@ -641,20 +690,30 @@ video {
 }
 @media (min-width: 768px) {
 
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
-  .md\:h-80 {
-    height: 20rem;
+  .md\:h-100 {
+    height: 25rem;
   }
 
   .md\:h-full {
     height: 100%;
-  }
-
-  .md\:h-100 {
-    height: 25rem;
   }
 
   .md\:w-1\/2 {
@@ -665,12 +724,21 @@ video {
     width: 100%;
   }
 
+  .md\:w-48 {
+    width: 12rem;
+  }
+
   .md\:list-disc {
     list-style-type: disc;
   }
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .md\:rounded-r-none {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   .md\:bg-transparent {
@@ -685,5 +753,11 @@ video {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:shadow-none {
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
